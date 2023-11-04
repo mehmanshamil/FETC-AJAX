@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="inp">
+    <button id="btn">send</button>
+    <div id="example"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        let btn = document.getElementById("btn");
+        let inp = document.getElementById("inp");
+        let exmp = document.getElementById("example");
+
+        // axios get
+
+        // axios.get("https://northwind.vercel.app/api/orders")
+        //     .then(res => {
+        //         res.data.forEach(item => {
+        //             let p = document.createElement("p");
+        //             p.innerHTML = item.id
+        //             exmp.appendChild(p)
+        //         })
+        //     })
+
+        // axios Post
+
+        // function myfuncpost() {
+
+        //     axios.post("https://northwind.vercel.app/api/orders", {
+        //         name: inp.value,
+        //     })
+        //         .then(res => {
+        //             console.log("data gonderildi");
+        //         })
+        // }
+        // btn.addEventListener("click",myfuncpost)
+
+        // axios Delete
+
+        // function myfncdel() {
+        //     axios.delete(`https://northwind.vercel.app/api/orders/${inp.value}`)
+        // }
+        // btn.addEventListener("click", myfncdel)
+
+        // axios update
+
+        // function updateData(update) {
+            
+        //     const apiUrl = `https://northwind.vercel.app/api/orders/${inp.value}`;
+
+        //     axios.put(apiUrl, update)
+        //         .then(response => {
+        //             console.log("Melumat yenilendi :", response.data);
+        //         })
+        //         .catch(error => {
+        //             console.error("XETA :", error);
+        //         });
+        // }
+        // const update = {
+        //     field1: "numune 1",
+        //     field2: "numune 2",
+        // };
+
+        // const send = document.getElementById("send");
+        // btn.addEventListener("click", () => {
+        //     updateData(update);
+        // });
+
+           // FETC GET 
+
+        // function fetcget(url){
+        //     fetch(url)
+        //     .then(res => res.json())
+        //     .then(data => console.log(data))
+        //     .catch(err=> console.log(err))
+        // }
+        // fetcget("https://northwind.vercel.app/api/orders")
+
+        // FETC POST
+
+        // btn.addEventListener("click", fetcpost);
+
+        // function fetcpost() {
+        //     let url = "https://northwind.vercel.app/api/orders"
+        //     fetch(url, {
+        //         method: "POST",
+        //         headers: {
+        //             "Content-Type": "application/json",
+        //         },
+        //         body: JSON.stringify({
+        //             name: inp.value
+        //         })
+        //     })
+        //     console.log(inp.value);
+
+        // }
+
+        // FETC Delete
+
+        // btn.addEventListener("click", fetchdel);
+
+        // function fetchdel() {
+        //     let url = `https://northwind.vercel.app/api/orders/${inp.value}`
+        //     fetch(url, {
+        //         method: "DELETE"
+        //     })
+        //     .then(res => res.json())
+        //     .then(data => console.log(data))
+        //     .catch(err => console.log(err))
+        // }
+
+        // fetch update
+
+        // function updateData(update) {
+        //     let inp = document.getElementById("inp");
+        //     const apiUrl = `https://northwind.vercel.app/api/orders/${inp.value}`;
+
+        //     fetch(apiUrl, {
+        //         method: "PUT",
+        //         headers: {
+        //             "Content-Type": "application/json"
+        //         },
+        //         body: JSON.stringify(update)
+        //     })
+        // }
+
+        // const update = {
+        //     field1: "numune 1",
+        //     field2: "numune 2",
+        //     field3: "numune 3",
+        // };
+
+        // btn.addEventListener("click", () => {
+        //     updateData(update);
+        // });
+
+
+    </script>
+</body>
+
+</html>
